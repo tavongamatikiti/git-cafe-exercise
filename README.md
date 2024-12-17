@@ -105,3 +105,32 @@ git checkout main
 Switched to branch 'main'
 Your branch is up-to-date with 'origin/main'.
 ```
+```shell
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/bug-fix]
+git checkout -b fix/contact
+Switched to a new branch 'fix/contact'
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/contact]
+git add index-4.html
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/contact]
+git commit -m 'Fixed contact'
+[fix/contact 9cf8dbd] Fixed contact
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ 
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/contact]
+git push --set-upstream origin fix/contact
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 292 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'fix/contact' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/git-cafe-exercise/pull/new/fix/contact
+remote: 
+To https://github.com/tavongamatikiti/git-cafe-exercise.git
+ * [new branch]      fix/contact -> fix/contact
+Branch fix/contact set up to track remote branch fix/contact from origin.
+```
