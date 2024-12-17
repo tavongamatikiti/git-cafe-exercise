@@ -36,3 +36,30 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/tavongamatikiti/git-cafe-exercise.git
    d1d3f9c..d7411ad  main -> main
 ```
+
+# Bundle 6
+
+## Exercise 1
+
+```shell
+~/IdeaProjects/the-gym/git-cafe-exercise git:[main]
+git checkout -b feature/menu-page
+Switched to a new branch 'feature/menu-page'
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[feature/menu-page]
+touch menu.html
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[feature/menu-page]
+git add menu.html
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[feature/menu-page]
+git commit -m "Add menu.html with the list of menu items"
+[feature/menu-page 07dc9f6] Add menu.html with the list of menu items
+ 1 file changed, 47 insertions(+)
+ create mode 100644 menu.html
+ 
+~/IdeaProjects/the-gym/git-cafe-exercise git:[feature/menu-page]
+git push --set-upstream origin feature/menu-page
+Branch feature/menu-page set up to track remote branch feature/menu-page from origin.
+Everything up-to-date
+```
