@@ -63,3 +63,45 @@ git push --set-upstream origin feature/menu-page
 Branch feature/menu-page set up to track remote branch feature/menu-page from origin.
 Everything up-to-date
 ```
+
+## Exercise 2
+
+```shell
+~/IdeaProjects/the-gym/git-cafe-exercise git:[feature/menu-page]
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[main]
+git checkout -b fix/bug-fix
+Switched to a new branch 'fix/bug-fix'
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/bug-fix]
+git add index-4.html
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/bug-fix]
+git commit -m 'Fixed bug'
+[fix/bug-fix fed7da2] Fixed bug
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ 
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/bug-fix]
+git push --set-upstream origin fix/bug-fix
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 298 bytes | 0 bytes/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'fix/bug-fix' on GitHub by visiting:
+remote:      https://github.com/tavongamatikiti/git-cafe-exercise/pull/new/fix/bug-fix
+remote: 
+To https://github.com/tavongamatikiti/git-cafe-exercise.git
+ * [new branch]      fix/bug-fix -> fix/bug-fix
+Branch fix/bug-fix set up to track remote branch fix/bug-fix from origin.
+
+~/IdeaProjects/the-gym/git-cafe-exercise git:[fix/bug-fix]
+git checkout main
+Switched to branch 'main'
+Your branch is up-to-date with 'origin/main'.
+```
